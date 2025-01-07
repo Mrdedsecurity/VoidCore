@@ -1,0 +1,109 @@
+/* Body Background */
+body {
+    background-color: #0a0a0a; /* Set the background to black */
+    color: #00ff00; /* Text color to green */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #0f0f0f;
+    border-bottom: 1px solid #00ff00;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.logo .highlight {
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #00d9d9;
+}
+
+.login-btn {
+    background: #00ff00;
+    color: #0a0a0a;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #00ff00;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background: #0a0a0a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #0f1f0f;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 255, 0, 0.3);
+    color: #00ff00;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    background: #00ff00;
+    color: #0a0a0a;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.countdown {
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.card-body p {
+    margin: 10px 0;
+    color: #00ff00;
+}
