@@ -1,7 +1,7 @@
 /* Body Background */
 body {
-    background-color: #0a0a0a; /* Set the background to black */
-    color: #00ff00; /* Text color to green */
+    background-color: #0a0a0a;
+    color: #00ff00;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -29,31 +29,46 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 30px;
     margin-left: 20px;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
 }
 
 .nav-item {
     text-decoration: none;
-    color: #00ff00;
+    color: #00ff00; /* Default green color */
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
+    padding: 5px 10px;
 }
 
 .nav-item:hover {
     color: #00d9d9;
 }
 
+/* Style for the "Flags" link specifically (last list item) */
+.nav-links ul li:last-child a {
+    color: #ffffff; /* White color for "Flags" */
+}
+
 .login-btn {
     background: #00ff00;
     color: #0a0a0a;
-    padding: 5px 15px;
+    padding: 8px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     border: 1px solid #00ff00;
     transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
 }
 
 .login-btn:hover {
@@ -106,4 +121,249 @@ body {
 .card-body p {
     margin: 10px 0;
     color: #00ff00;
+}
+
+/* Flag Styles */
+.flag-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flag {
+    text-align: center;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0f1f0f;
+    width: 200px;
+    box-sizing: border-box;
+    display: flex; /* Make flag a flex container */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.flag-number {
+    font-size: 2em; /* Make the number larger */
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 5px; /* Add some space below the number */
+}
+
+.flag p {
+    margin-bottom: 10px; /* Space between description and input */
+}
+
+.flag input[type="text"] {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%; /* Make input fill the flag width */
+    box-sizing: border-box;
+    margin-bottom: 5px; /* Space between input and button */
+}
+
+.flag button {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.flag button:hover {
+    background-color: #00d9d9;
+}
+
+.hint {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+/* Flag Info Section */
+.flag-info {
+    background-color: #0f1f0f;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    color: #00ff00;
+    box-sizing: border-box;
+    font-size: 1.1em; 
+    text-align: justify; 
+    line-height: 1.4; 
+}
+
+.flag-info h2,
+.flag-info h3 {
+    color: #00ff00;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.flag-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px; /* Add space below the list */
+    font-size: 1.1em;
+}
+
+.flag-info li {
+    margin-bottom: 5px;
+}
+
+.javascript-warning {
+    color: white;
+    font-weight: bold;
+}
+
+/* Flag Styles */
+.flag-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.flag {
+    text-align: center;
+    border: 1px solid #00ff00;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #0f1f0f;
+    width: 280px; /* Increased width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 220px; /* Increased min-height */
+    font-size: 1.1em;
+}
+
+.flag-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+.flag p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    min-height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word; /* Allow long words to break */
+}
+
+.flag input[type="text"] {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 8px;
+    border-radius: 5px;
+    width: 90%; /* Slightly smaller input width */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.flag button {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.flag .hint-button {
+    margin-bottom: 10px; 
+}
+
+.flag button:hover {
+    background-color: #00d9d9;
+}
+
+.hint {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    word-wrap: break-word; /* Allow long words to break */
+}
+
+.login-container {
+    background-color: #0f1f0f;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    box-sizing: border-box;
+    color: #00ff00;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ff00;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    box-sizing: border-box;
+}
+
+.login-submit {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-submit:hover {
+    background-color: #00d9d9;
 }
