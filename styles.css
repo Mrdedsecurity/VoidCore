@@ -364,6 +364,28 @@ body {
     transition: background-color 0.3s;
 }
 
-.login-submit:hover {
-    background-color: #00d9d9;
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    width: 250px; 
+    margin-right: 10px; 
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
