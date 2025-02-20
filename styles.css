@@ -389,3 +389,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.correct-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px; 
+}
