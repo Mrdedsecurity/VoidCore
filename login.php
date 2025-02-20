@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -18,17 +20,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM users WHERE username = '$user' AND password = '$pass'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        $_SESSION['username'] = $username;
-        
-        if ($username === "VoidSoup") {
+    if ($stmt->num_rows > 0) {
+        $_SESSION['username'] = $user; 
+
+        if ($user === "VoidSoup") {
             header("Location: VoidSoup.php");
             exit();
         } else {
-            echo "Login successful! But only VoidSoup has access to special areas.";
+            header("Location: affiliate.html");
+            exit();
         }
     } else {
         echo "Invalid credentials.";
     }
+
+    $stmt->close();
 }
+
+$conn->close();
 ?>
