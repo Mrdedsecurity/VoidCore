@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const submitButton = flagContainer.querySelector('.submit-button');
         const correctFlags = [
             "FLAG{XSS}",
-            "FLAG{SQL}",
             "FLAG{VoidSoup}",
             "FLAG{Key}",
             "server-status",
