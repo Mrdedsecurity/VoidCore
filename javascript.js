@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "FLAG{VoidSoup}",
             "FLAG{Key}",
             "server-status",
-            "35.179.255.141"
+            "172-31-16-136",
+            "Apache/2.4.58 (Ubuntu)"
         ];
 
         submitButton.addEventListener('click', () => {
