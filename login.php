@@ -3,7 +3,7 @@ session_start();
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password123";
 $dbname = "voidcore";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -33,8 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Invalid credentials.";
     }
-
-    $stmt->close();
 }
 
 $conn->close();
