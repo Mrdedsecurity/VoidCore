@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['username'] = $user; 
 
         if ($user === "VoidSoup") {
-            header("Location: VoidSoup.php");
+            header("Location: VoidSoup.html");
             exit();
         } else {
             header("Location: affiliate.html");
