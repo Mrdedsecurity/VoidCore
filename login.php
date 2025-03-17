@@ -16,14 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    
     $sql = "SELECT * FROM users WHERE username = '$user' AND password = '$pass'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $_SESSION['username'] = $user;
-    
-        if ($user === "VoidSoup") {
+
+        if (strpos($_SESSION['username'], "VoidSoup") !== false) {
             header("Location: VoidSoup.html");
             exit();
         } else {
@@ -33,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Invalid credentials.";
     }
+}
 
 $conn->close();
 ?>
